@@ -1,0 +1,122 @@
+1.
+a=int(input())
+b=int(input())
+c=int(input())
+if((a>=65 and b>=55 and c>=50)or(a+b+c)>=180):
+    print("The candidate is eligible")
+else:
+    print("The candidate is not eligible")
+
+2.
+a=input()
+if(a=='a' or a=='e' or a=='i' or a=='o' or a=='u'):
+    print("It's a vowel.")
+elif(a=='y'):
+    print("Sometimes it's a vowel... Sometimes it's a consonant.")
+else:
+    print("It's a consonant.")
+
+3.
+a=float(input())
+if(a<100):
+    print("100.00")
+elif(a>=100 and a<199):
+    print("%.2f"%(a*1.20))
+elif((a>199 and a<400) and (a*1.50)>400):
+    print("%.2f"%(a*1.50+((15/100)*(a*1.50))))
+elif(a>400 and a<600):
+    print("%.2f"%(a*1.80+((15/100)*(a*1.80))))
+else:
+    print("%.2f"%(a*2.00+((15/100)*(a*2.00))))
+
+4.
+a=input()
+if(a=='January' or a=='March' or a=='May' or a=='July' or a=='August' or a=='October' or a=='December'):
+    print(a,"has 31 days in it.")
+elif(a=='February'):
+    print(a,"has 28 or 29 days in it.")
+else:
+    print(a,"has 30 days in it.")
+
+5.
+a=int(input())
+if(a%12==8):
+    print(a,"is the year of the Dragon.")
+elif(a%12==9):
+    print(a,"is the year of the Snake.")
+elif(a%12==10):
+    print(a,"is the year of the Horse.")
+elif(a%12==11):
+    print(a,"is the year of the Sheep.")
+elif(a%12==0):
+    print(a,"is the year of the Monkey.")
+elif(a%12==1):
+    print(a,"is the year of the Rooster.")
+elif(a%12==2):
+    print(a,"is the year of the Dog.")
+elif(a%12==3):
+    print(a,"is the year of the Pig.")    
+elif(a%12==4):
+    print(a,"is the year of the Rat.")
+elif(a%12==5):
+    print(a,"is the year of the Ox.")
+elif(a%12==6):
+    print(a,"is the year of the Tiger.")
+else:
+    print(a,"is the year of the Hare.")
+
+6.
+a=int(input())
+b=str(a)
+if(len(b)==1):
+    print("-1")
+else:
+    print(b[-2])
+
+7.
+a=int(input())
+b=int(input())
+c=int(input())
+if(a>b and a>c):
+    if(a**2==b**2+c**2):
+        print("yes")
+    else:
+        print("no")
+elif(b>c):
+    if(b**2==a**2+c**2):
+        print("yes")
+    else:
+        print("no")
+else:
+    if(c**2==a**2+b**2):
+        print("yes")
+    else:
+        print("no")
+
+
+8.
+a=int(input())
+if(a%400==0 and a%100==0 and a%4==0):
+    print(a,"is a leap year.")
+else:
+    print(a,"is not a leap year.")
+
+9.
+a=int(input())
+b=int(input())
+c=a/2
+if(b>=c):
+    print("IN")
+else:
+    print("OUT")
+
+10.
+a=int(input())
+b=int(input())
+c=int(input())
+if(a==b and a==c):
+    print("That's a equilateral triangle")
+elif(a==b and a!=c):
+    print("That's a isosceles triangle")
+else:
+    print("That's a scalene triangle")
